@@ -1,0 +1,47 @@
+/* Comentario */
+
+/*
+Selectores: Identificar y delimitar los elementos HTML a los que se aplicarán estilos específicos. 
+selector {
+    propiedad: valor;
+    otra-propiedad: valor;
+}
+
+*/
+
+/* Selector por etiqueta */
+h2, li{
+    color: rgb(56, 3, 107);
+}
+
+/* Selector por clase */
+.borde{
+    border: 2px solid #778beb;
+    color: #c44569;
+}
+
+.boder-inferior{
+    border-bottom: 5px solid #c44569;
+}
+
+.importante{
+    color: red;
+    font-size: 32px;
+}
+
+/* Selector por id */
+#piePagina{
+    cursor: help;
+}
+
+/* Selector universal */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* TODO: Unidades relativas */
+
+/* Selector por atributo 
+TODO: Pendiente al abarcar el tema de formularios  
+*/
