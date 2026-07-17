@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro manual de egresados</title>
 
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
     <link rel="stylesheet" href="css/estilos-generales.css">
     <link rel="stylesheet" href="css/campos-dinamicos.css">
 
@@ -41,7 +45,7 @@
                 <div>
                     <input type="text" id="nombre-completo" placeholder="ej. María Pérez" required aria-required="true" aria-describedby="ayuda-nombre">
 
-                    <span id="ayuda-nombre" class="texto-oculto">Ingrese su nombre completo (mínimo 3 caracteres).</span>
+                    <span id="ayuda-nombre" class="texto-oculto">Ingrese su nombre completo (mínimo 2 caracteres).</span>
                 </div>
             </div>
 
@@ -51,7 +55,7 @@
                 <span aria-hidden="true" class="label-requerido">*</span>
 
                 <div>
-                    <input type="email" id="correo" placeholder="egresado@ucenfotec.ac.cr" required aria-required="true" aria-describedby="ayuda-correo">
+                    <input type="email" id="correo" placeholder="egresado@dominio.com" required aria-required="true" aria-describedby="ayuda-correo">
 
                     <span id="ayuda-correo" class="texto-oculto">Ingrese un correo electrónico válido.</span>
                 </div>
@@ -92,7 +96,7 @@
                 <button type="button" class="agregar-lugar" id="agregar-lugar-btn">+ Agregar lugar de trabajo</button>
             </div>
 
-            <button class="guardar-formulario">Registrar egresado</button>
+            <button class="guardar-formulario" id="guardar-egresado" type="button">Registrar egresado</button>
 
         </form>
     </main>
@@ -140,6 +144,9 @@
         </div>
     </template>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Script de terceros -->
+
+    <script src="js/registro-manual-egresados.js"></script> <!-- Script propio -->
 
 </body>
 
